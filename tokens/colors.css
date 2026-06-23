@@ -1,0 +1,91 @@
+/* ============================================================
+   NewObour — Color Tokens
+   Brand palette: Deep Navy, Royal Gold, Soft White, Graphite
+   ============================================================ */
+:root {
+  /* ---- Brand: Deep Navy (primary) ---- */
+  --navy-900: #060f1e;
+  --navy-800: #0b1b33; /* PRIMARY / BRAND */
+  --navy-700: #13294b;
+  --navy-600: #1c3a63;
+  --navy-500: #2a4d7d;
+  --navy-400: #4a6c9b;
+  --navy-300: #7e98ba;
+  --navy-200: #b4c4d8;
+  --navy-100: #dce4ee;
+  --navy-50:  #eef2f8;
+
+  /* ---- Brand: Royal Gold (accent) ---- */
+  --gold-900: #6e4f18;
+  --gold-800: #8a6622;
+  --gold-700: #a87e2e;
+  --gold-600: #c9983e; /* ACCENT */
+  --gold-500: #d4a857;
+  --gold-400: #ddba76;
+  --gold-300: #e7cd9b;
+  --gold-200: #f0dfc2;
+  --gold-100: #f7eedd;
+  --gold-50:  #fbf6ec;
+
+  /* ---- Neutrals: Graphite & Soft White ---- */
+  --ink-900: #1a1a1a;
+  --ink-800: #2d2d2d; /* GRAPHITE — body text */
+  --ink-700: #404040;
+  --ink-600: #5c5c5c;
+  --ink-500: #767676;
+  --ink-400: #9a9a9a;
+  --ink-300: #c2c2c0;
+  --ink-200: #e2e2de;
+  --ink-100: #eeeeea;
+  --paper:   #f7f7f5; /* SOFT WHITE — app background */
+  --white:   #ffffff;
+
+  /* ---- Semantic status (land legal states) ---- */
+  --status-mail:    #5b7da6;  /* تم تقديم البريد */
+  --status-ledger:  #c9983e;  /* نزلت كشف */
+  --status-alloc:   #2f9e7d;  /* تم التخصيص */
+  --status-license: #2563a8;  /* تم الترخيص */
+  --status-build:   #d08a3a;  /* جاري البناء */
+
+  /* ---- Feedback ---- */
+  --success-600: #1f8a5b;
+  --success-100: #dcefe5;
+  --warning-600: #c97f1e;
+  --warning-100: #f7ecd7;
+  --danger-600:  #c0392b;
+  --danger-100:  #f6dedb;
+  --info-600:    #2563a8;
+  --info-100:    #dde9f6;
+
+  /* ============================================================
+     Semantic aliases — reference these in components
+     ============================================================ */
+  --brand:            var(--navy-800);
+  --brand-hover:      var(--navy-700);
+  --brand-active:     var(--navy-900);
+  --accent:           var(--gold-600);
+  --accent-hover:     var(--gold-700);
+  --accent-soft:      var(--gold-100);
+
+  --bg-app:           var(--paper);
+  --bg-surface:       var(--white);
+  --bg-raised:        var(--white);
+  --bg-sunken:        var(--ink-100);
+  --bg-navy:          var(--navy-800);
+  --bg-overlay:       rgba(6, 15, 30, 0.55);
+
+  --text-strong:      var(--navy-800);
+  --text-body:        var(--ink-800);
+  --text-muted:       var(--ink-500);
+  --text-faint:       var(--ink-400);
+  --text-on-brand:    #ffffff;
+  --text-on-accent:   var(--navy-900);
+  --text-link:        var(--navy-600);
+
+  --border-subtle:    var(--ink-200);
+  --border-default:   var(--ink-300);
+  --border-strong:    var(--navy-200);
+  --border-accent:    var(--gold-600);
+
+  --focus-ring:       rgba(201, 152, 62, 0.45);
+}

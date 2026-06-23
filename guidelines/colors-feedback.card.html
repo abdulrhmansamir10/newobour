@@ -1,0 +1,28 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Feedback & Neutrals" subtitle="Success / warning / danger / info + the neutral surfaces" -->
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); padding: 20px; font-family: var(--font-base); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .cell { border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-xs); border: 1px solid var(--border-subtle); }
+  .bar { height: 40px; }
+  .lab { padding: 6px 10px; font-size: 12px; font-weight: 600; background: #fff; color: var(--text-body); display: flex; justify-content: space-between; }
+  .hex { font-family: var(--font-num); opacity: .6; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"><div class="bar" style="background:var(--success-600)"></div><div class="lab">نجاح <span class="hex">1F8A5B</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--warning-600)"></div><div class="lab">تنبيه <span class="hex">C97F1E</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--danger-600)"></div><div class="lab">خطأ <span class="hex">C0392B</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--info-600)"></div><div class="lab">معلومة <span class="hex">2563A8</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--paper)"></div><div class="lab">خلفية <span class="hex">F7F7F5</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--ink-200)"></div><div class="lab">حدود <span class="hex">E2E2DE</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--ink-500)"></div><div class="lab">نص خافت <span class="hex">767676</span></div></div>
+    <div class="cell"><div class="bar" style="background:var(--ink-800)"></div><div class="lab">نص أساسي <span class="hex">2D2D2D</span></div></div>
+  </div>
+</body>
+</html>

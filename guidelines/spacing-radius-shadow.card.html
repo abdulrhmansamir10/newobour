@@ -1,0 +1,34 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Radius & Shadow" subtitle="Soft rounded corners + restrained navy-tinted elevation" -->
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); padding: 24px; font-family: var(--font-num); }
+  .row { display: flex; gap: 28px; align-items: center; }
+  .group { display: flex; gap: 16px; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .tile { width: 64px; height: 64px; background: #fff; border: 1px solid var(--border-subtle); }
+  .lab { font-size: 11px; color: var(--text-muted); }
+  .sep { width: 1px; height: 80px; background: var(--border-subtle); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="group">
+      <div class="item"><div class="tile" style="border-radius:var(--radius-sm)"></div><span class="lab">sm·8</span></div>
+      <div class="item"><div class="tile" style="border-radius:var(--radius-md)"></div><span class="lab">md·12</span></div>
+      <div class="item"><div class="tile" style="border-radius:var(--radius-lg)"></div><span class="lab">lg·16</span></div>
+      <div class="item"><div class="tile" style="border-radius:var(--radius-2xl)"></div><span class="lab">2xl·28</span></div>
+    </div>
+    <div class="sep"></div>
+    <div class="group">
+      <div class="item"><div class="tile" style="border:none;box-shadow:var(--shadow-sm);border-radius:var(--radius-md)"></div><span class="lab">sm</span></div>
+      <div class="item"><div class="tile" style="border:none;box-shadow:var(--shadow-md);border-radius:var(--radius-md)"></div><span class="lab">md</span></div>
+      <div class="item"><div class="tile" style="border:none;box-shadow:var(--shadow-lg);border-radius:var(--radius-md)"></div><span class="lab">lg</span></div>
+      <div class="item"><div class="tile" style="border:none;box-shadow:var(--shadow-gold);border-radius:var(--radius-md)"></div><span class="lab">gold</span></div>
+    </div>
+  </div>
+</body>
+</html>

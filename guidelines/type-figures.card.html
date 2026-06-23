@@ -1,0 +1,26 @@
+<!-- @dsCard group="Type" viewport="700x180" name="Figures & Prices" subtitle="Playfair Display for Latin numerals — prices, areas, IDs" -->
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-surface); padding: 24px; font-family: var(--font-base); color: var(--text-strong); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .cell { display: flex; flex-direction: column; gap: 4px; }
+  .lab { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+  .fig { font-family: var(--font-num); font-weight: 700; letter-spacing: -.01em; color: var(--navy-800); }
+  .unit { font-family: var(--font-base); font-size: 16px; color: var(--text-muted); font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"><span class="lab">السعر المطلوب</span><span class="fig" style="font-size:40px">2,450,000 <span class="unit">ج.م</span></span></div>
+    <div class="cell"><span class="lab">المساحة</span><span class="fig" style="font-size:40px">320 <span class="unit">م²</span></span></div>
+    <div class="cell"><span class="lab">رقم القطعة</span><span class="fig" style="font-size:40px">B-147</span></div>
+    <div class="cell"><span class="lab">سعر المتر</span><span class="fig" style="font-size:28px">7,656 <span class="unit">ج.م</span></span></div>
+    <div class="cell"><span class="lab">الرقم القومي</span><span class="fig" style="font-size:28px">2880••••••••</span></div>
+    <div class="cell"><span class="lab">المجاورة / البلوك</span><span class="fig" style="font-size:28px">12 / 4</span></div>
+  </div>
+</body>
+</html>

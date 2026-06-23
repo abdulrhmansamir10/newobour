@@ -1,0 +1,59 @@
+/* ============================================================
+   NewObour — Fonts
+   Tajawal (Arabic/Latin UI) — local files, OFL licensed.
+   Playfair Display (Latin display serif) — Google Fonts.
+   NOTE: Playfair Display TTFs were not supplied; loaded from
+   Google Fonts CDN as a substitute. Replace with local files
+   if offline use is required.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-Black.ttf') format('truetype');
+}

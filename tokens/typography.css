@@ -1,0 +1,46 @@
+/* ============================================================
+   NewObour — Typography Tokens
+   Tajawal for Arabic + UI. Playfair Display for Latin display
+   accents (numbers, English headings, brand marks).
+   Primary reading direction is RTL (Arabic).
+   ============================================================ */
+:root {
+  /* Families */
+  --font-base:    'Tajawal', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
+  --font-serif:   'Playfair Display', 'Times New Roman', serif; /* Latin display accents */
+  --font-num:     'Playfair Display', 'Tajawal', serif;          /* price / figures */
+
+  /* Weights */
+  --fw-light:     300; /* @kind font */
+  --fw-regular:   400; /* @kind font */
+  --fw-medium:    500; /* @kind font */
+  --fw-bold:      700; /* @kind font */
+  --fw-extrabold: 800; /* @kind font */
+  --fw-black:     900; /* @kind font */
+
+  /* Type scale (1.250 major-third-ish, tuned) */
+  --text-2xs:  11px;
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-md:   18px;
+  --text-lg:   20px;
+  --text-xl:   24px;
+  --text-2xl:  30px;
+  --text-3xl:  38px;
+  --text-4xl:  48px;
+  --text-5xl:  60px;
+
+  /* Line heights */
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.6;  /* Arabic body reads best a touch looser */
+  --leading-relaxed: 1.85;
+
+  /* Letter spacing (Arabic stays at 0; Latin labels get tracking) */
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-wider:  0.12em;
+}

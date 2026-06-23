@@ -1,0 +1,49 @@
+/* ============================================================
+   NewObour — Base / reset layer
+   Light-touch resets + helpful defaults. RTL-first.
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  font-size: var(--text-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Default to RTL for Arabic content; override with dir="ltr" where needed */
+:root { direction: rtl; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--text-strong);
+  font-weight: var(--fw-bold);
+  line-height: var(--leading-tight);
+}
+
+p { margin: 0; }
+
+a { color: var(--text-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button { font-family: inherit; }
+
+/* Latin numerals & english in a price/figure context */
+.num, [data-num] {
+  font-family: var(--font-num);
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Selection */
+::selection { background: var(--gold-200); color: var(--navy-900); }
+
+/* Focus visibility */
+:focus-visible { outline: none; box-shadow: var(--shadow-focus); border-radius: var(--radius-xs); }

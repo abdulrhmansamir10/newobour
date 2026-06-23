@@ -1,0 +1,24 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Land Status Colors" subtitle="Semantic colors for legal land states (حالة الأرض)" -->
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); padding: 20px; font-family: var(--font-base); }
+  .wrap { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px 8px 12px; border-radius: var(--radius-pill); font-weight: 700; font-size: 13.5px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .hex { font-family: var(--font-num); font-size: 11px; opacity: .7; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="chip" style="background:#e9eff6;color:#3c5876"><span class="dot" style="background:var(--status-mail)"></span>تم تقديم البريد <span class="hex">5B7DA6</span></span>
+    <span class="chip" style="background:var(--gold-100);color:#8a6622"><span class="dot" style="background:var(--status-ledger)"></span>نزلت كشف <span class="hex">C9983E</span></span>
+    <span class="chip" style="background:#dcefe5;color:#1c7257"><span class="dot" style="background:var(--status-alloc)"></span>تم التخصيص <span class="hex">2F9E7D</span></span>
+    <span class="chip" style="background:var(--info-100);color:#1f4f86"><span class="dot" style="background:var(--status-license)"></span>تم الترخيص <span class="hex">2563A8</span></span>
+    <span class="chip" style="background:#f7ecd7;color:#9a5f1c"><span class="dot" style="background:var(--status-build)"></span>جاري البناء <span class="hex">D08A3A</span></span>
+  </div>
+</body>
+</html>
