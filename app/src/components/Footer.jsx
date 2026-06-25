@@ -1,19 +1,31 @@
+import { Link } from 'react-router-dom';
+
 const FOOTER_COLUMNS = [
   {
     title: 'الخدمات',
-    links: ['كشوف التقنين', 'دليل الترخيص', 'تكاليف البناء', 'إجراءات الاستلام'],
+    links: [
+      { label: 'كشوف التقنين', to: '/ledger-search' },
+      { label: 'دليل الترخيص', to: '/guide' },
+      { label: 'تكاليف البناء', to: '/guide' },
+      { label: 'إجراءات الاستلام', to: '/guide' },
+    ],
   },
   {
-    title: 'الماركت بليس',
-    links: ['عروض الأراضي', 'الوحدات السكنية', 'الوحدات التجارية', 'طلبات الشراء'],
+    title: 'عروض الأراضي والعقارات',
+    links: [
+      { label: 'عروض الأراضي', to: '/marketplace' },
+      { label: 'الوحدات السكنية', to: '/marketplace' },
+      { label: 'الوحدات التجارية', to: '/marketplace' },
+      { label: 'طلبات الشراء', to: '/add-listing' },
+    ],
   },
   {
     title: 'المدينة',
     links: [
-      'الأخبار والمرافق',
-      'الخرائط والمخططات',
-      'اللوائح والقوانين',
-      'تواصل معنا',
+      { label: 'الأخبار والمرافق', to: '/news' },
+      { label: 'الخرائط والمخططات', to: '/price-index' },
+      { label: 'اللوائح والقوانين', to: '/guide' },
+      { label: 'تواصل معنا', to: '/contact' },
     ],
   },
 ];
@@ -27,18 +39,20 @@ export default function Footer() {
           {/* Brand column */}
           <div className="min-w-[240px] flex-1">
             <div className="mb-4 flex items-center gap-3">
-              <img
-                src="/images/logo-mark-light.png"
-                alt="العبور الجديدة"
-                className="h-10 w-auto"
-              />
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm">
+                <img
+                  src="/images/new-obour-logo-mark.png"
+                  alt="العبور الجديد"
+                  className="h-full w-full scale-[1.38] object-contain"
+                />
+              </span>
               <span className="text-lg font-extrabold text-white">
-                العبور الجديدة
+                العبور الجديد
               </span>
             </div>
             <p className="max-w-[360px] text-sm leading-relaxed text-white/65">
-              الدليل الرسمي والموثوق لسكان ومستثمري مدينة العبور الجديدة —
-              متابعة الكشوف، الأخبار، وسوق الأراضي في مكان واحد.
+              الدليل الرسمي والموثوق لسكان ومستثمري مدينة العبور الجديد —
+              متابعة الكشوف، الأخبار، وعروض الأراضي والعقارات في مكان واحد.
             </p>
           </div>
 
@@ -50,10 +64,13 @@ export default function Footer() {
               </h4>
               <ul className="flex flex-col gap-2.5">
                 {col.links.map((link) => (
-                  <li key={link}>
-                    <span className="cursor-pointer text-sm text-white/65 transition-colors duration-200 hover:text-gold-400">
-                      {link}
-                    </span>
+                  <li key={link.label}>
+                    <Link
+                      to={link.to}
+                      className="text-sm text-white/65 transition-colors duration-200 hover:text-gold-400"
+                    >
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -63,7 +80,7 @@ export default function Footer() {
 
         {/* ── Copyright bar ── */}
         <div className="mt-9 border-t border-white/10 pt-5 text-center text-[13px] text-white/50">
-          &copy; ٢٠٢٦ منصة العبور الجديدة &middot; جميع الحقوق محفوظة
+          &copy; ٢٠٢٦ منصة العبور الجديد &middot; جميع الحقوق محفوظة
         </div>
       </div>
     </footer>

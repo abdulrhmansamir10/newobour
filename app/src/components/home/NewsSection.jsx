@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Megaphone } from 'lucide-react';
 import { news } from '../../data/mockData';
 
@@ -25,15 +26,22 @@ export default function NewsSection() {
               تحديثات رسمية من داخل الجهاز
             </p>
           </div>
-          <button className="bg-transparent border-none text-navy-700 font-bold text-sm hover:text-navy-800 transition cursor-pointer self-start sm:self-end py-2 px-1">
+          <Link
+            to="/news"
+            className="bg-transparent border-none text-navy-700 font-bold text-sm hover:text-navy-800 transition cursor-pointer self-start sm:self-end py-2 px-1"
+          >
             كل الأخبار &larr;
-          </button>
+          </Link>
         </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {news.map((item, index) => (
-            <div key={index} className="flex gap-4 items-center bg-paper border border-ink-200 rounded-2xl p-4">
+            <Link
+              key={index}
+              to="/news"
+              className="flex gap-4 items-center bg-paper border border-ink-200 rounded-2xl p-4 transition hover:-translate-y-0.5 hover:shadow-md"
+            >
               <div className="w-14 h-14 rounded-xl bg-navy-50 flex items-center justify-center text-navy-700 shrink-0">
                 <Megaphone size={24} />
               </div>
@@ -48,7 +56,7 @@ export default function NewsSection() {
                   {item.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

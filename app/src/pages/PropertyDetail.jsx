@@ -34,7 +34,7 @@ export default function PropertyDetail() {
       <div className="min-h-[70vh] bg-paper px-6 py-12 text-center">
         <h1 className="text-2xl font-extrabold text-navy-800">العرض غير موجود</h1>
         <Link className="mt-4 inline-block text-sm font-bold text-gold-700 underline" to="/marketplace">
-          العودة للماركت بليس
+          العودة إلى عروض الأراضي والعقارات
         </Link>
       </div>
     );

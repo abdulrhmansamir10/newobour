@@ -4,18 +4,18 @@ export const services = [
     icon: 'FileSearch',
     title: 'كشوف التقنين',
     description: 'ابحث باسمك أو رقمك القومي في جميع كشوف التقنين والتخصيص المعتمدة.',
-    to: '/ledger',
+    to: '/ledger-search',
   },
   {
     icon: 'Building2',
-    title: 'سوق العقارات',
+    title: 'عروض الأراضي والعقارات',
     description: 'تصفّح أراضي ووحدات سكنية معروضة للبيع بأسعار محدّثة يوميًا.',
-    to: '/properties',
+    to: '/marketplace',
   },
   {
     icon: 'Newspaper',
     title: 'الأخبار الرسمية',
-    description: 'آخر قرارات الجهاز والتحديثات الرسمية لمدينة العبور الجديدة.',
+    description: 'آخر قرارات الجهاز والتحديثات الرسمية لمدينة العبور الجديد.',
     to: '/news',
   },
   {

@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PropertyCard from '../PropertyCard';
 import { properties } from '../../data/mockData';
 
 export default function FeaturedListings() {
+  const navigate = useNavigate();
   // Show only verified (premium) listings, max 3
   const featured = properties.filter((p) => p.verified).slice(0, 3);
 
@@ -32,7 +33,11 @@ export default function FeaturedListings() {
         {/* Property Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map((property) => (
-            <PropertyCard key={property.id} {...property} />
+            <PropertyCard
+              key={property.id}
+              {...property}
+              onClick={() => navigate(`/marketplace/${property.id}`)}
+            />
           ))}
         </div>
       </div>

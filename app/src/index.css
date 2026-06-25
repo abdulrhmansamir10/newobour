@@ -187,5 +187,8 @@ body {
 /* Remove link underlines globally for the design system */
 a {
   text-decoration: none;
+}
+
+a:not([class]) {
   color: inherit;
 }

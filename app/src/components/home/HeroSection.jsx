@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5 font-bold text-[13.5px]"
              style={{ backgroundColor: 'rgba(201,152,62,0.16)', borderColor: 'rgba(201,152,62,0.4)', borderWidth: '1px', color: 'var(--color-gold-300)' }}>
           <ShieldCheck size={16} />
-          <span>الدليل الرسمي والموثوق لمدينة العبور الجديدة</span>
+          <span>الدليل الرسمي والموثوق لمدينة العبور الجديد</span>
         </div>
 
         {/* Headline */}
@@ -81,11 +81,29 @@ export default function HeroSection() {
           </form>
 
           {/* Popular Searches */}
-          <div className="flex gap-4 justify-center mt-4 text-white/60 text-[13.5px]">
+          <div className="flex flex-wrap gap-4 justify-center mt-4 text-white/60 text-[13.5px]">
             <span>بحث شائع:</span>
-            <span className="text-gold-300 cursor-pointer hover:text-gold-200 transition">الحي الثالث</span>
-            <span className="text-gold-300 cursor-pointer hover:text-gold-200 transition">كشف جمعية النصر</span>
-            <span className="text-gold-300 cursor-pointer hover:text-gold-200 transition">رقم قطعة أصلية</span>
+            <button
+              type="button"
+              onClick={() => navigate('/marketplace')}
+              className="bg-transparent p-0 text-gold-300 transition hover:text-gold-200"
+            >
+              الحي الثالث
+            </button>
+            <button
+              type="button"
+              onClick={() => navigate('/ledger-search')}
+              className="bg-transparent p-0 text-gold-300 transition hover:text-gold-200"
+            >
+              كشف جمعية النصر
+            </button>
+            <button
+              type="button"
+              onClick={() => navigate('/ledger-search')}
+              className="bg-transparent p-0 text-gold-300 transition hover:text-gold-200"
+            >
+              رقم قطعة أصلية
+            </button>
           </div>
         </div>
       </div>

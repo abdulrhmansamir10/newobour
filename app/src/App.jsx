@@ -12,6 +12,7 @@ import PropertyDetail from './pages/PropertyDetail';
 import BrokerProfile from './pages/BrokerProfile';
 import BrokerRegister from './pages/BrokerRegister';
 import AdminModeration from './pages/AdminModeration';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/broker/register" element={<BrokerRegister />} />
         <Route path="/broker/:id" element={<BrokerProfile />} />
         <Route path="/admin/moderation" element={<AdminModeration />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
   );

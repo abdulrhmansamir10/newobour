@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd app && npm ci && npm run build",
+  "buildCommand": "cd app && npm run build",
   "outputDirectory": "app/dist",
   "installCommand": "cd app && npm ci",
   "rewrites": [
@@ -9,4 +9,3 @@
     }
   ]
 }
-

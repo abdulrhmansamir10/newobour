@@ -31,7 +31,7 @@ export default function PriceIndex() {
     <div className="min-h-[70vh] bg-paper">
       <header className="bg-navy-800 px-6 py-10 text-white md:px-9">
         <div className="mx-auto max-w-[1320px]">
-          <h1 className="m-0 text-[32px] font-extrabold">مؤشر أسعار العبور الجديدة</h1>
+          <h1 className="m-0 text-[32px] font-extrabold">مؤشر أسعار العبور الجديد</h1>
           <p className="m-0 mt-2 max-w-[760px] text-base leading-relaxed text-white/75">
             قراءة تحليلية لسعر المتر، حجم السوق، ونسب اكتمال المرافق بين الأحياء.
           </p>

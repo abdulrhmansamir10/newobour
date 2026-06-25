@@ -4,7 +4,7 @@ import { LayoutDashboard, Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
   { id: 'home', label: 'الرئيسية', path: '/' },
-  { id: 'market', label: 'الماركت بليس', path: '/marketplace' },
+  { id: 'market', label: 'عروض الأراضي والعقارات', path: '/marketplace' },
   { id: 'ledger', label: 'كشوف التقنين', path: '/ledger-search' },
   { id: 'price', label: 'مؤشر الأسعار', path: '/price-index' },
   { id: 'news', label: 'الأخبار والمعلومات', path: '/news' },
@@ -23,29 +23,28 @@ export default function Navbar() {
       {/* ── Desktop bar ── */}
       <div className="mx-auto flex h-[72px] max-w-[1320px] items-center justify-between px-5 lg:px-8">
         {/* RIGHT — Logo + brand (RTL, so visually right) */}
-        <Link to="/" className="flex items-center gap-3 no-underline">
-          <img
-            src="/images/logo-mark-light.png"
-            alt="العبور الجديدة"
-            className="h-[42px] w-auto"
-          />
-          <div className="flex flex-col">
-            <span className="text-lg font-extrabold leading-tight text-white">
-              العبور الجديدة
-            </span>
-            <span className="font-num text-[10.5px] tracking-[0.16em] text-gold-400">
-              NEW OBOUR CITY
+        <Link to="/" className="flex shrink-0 items-center gap-3 no-underline">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm">
+            <img
+              src="/images/new-obour-logo-mark.png"
+              alt="العبور الجديد"
+              className="h-full w-full scale-[1.38] object-contain"
+            />
+          </span>
+          <div className="flex items-center">
+            <span className="text-[21px] font-extrabold leading-none text-white">
+              العبور الجديد
             </span>
           </div>
         </Link>
 
         {/* CENTER — Nav links (hidden on mobile) */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 xl:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.id} className="relative">
               <Link
                 to={link.path}
-                className={`newobour-nav-link relative block px-3.5 py-2 text-[15px] no-underline transition-colors duration-200 ${
+                className={`newobour-nav-link relative block whitespace-nowrap px-3.5 py-2 text-[15px] no-underline transition-colors duration-200 ${
                   isActive(link.path)
                     ? 'newobour-nav-link-active font-bold'
                     : 'font-medium'
@@ -63,7 +62,7 @@ export default function Navbar() {
         </ul>
 
         {/* LEFT — Action buttons (hidden on mobile) */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden shrink-0 items-center gap-3 xl:flex">
           <Link
             to="/dashboard"
             className="newobour-header-secondary-action flex items-center gap-2 rounded-xl border bg-transparent px-4 py-2 text-sm font-medium no-underline transition-all duration-200 hover:shadow-md active:scale-[0.97]"
@@ -83,7 +82,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="newobour-header-icon-button flex h-10 w-10 items-center justify-center rounded-lg transition-colors md:hidden"
+          className="newobour-header-icon-button flex h-10 w-10 items-center justify-center rounded-lg transition-colors xl:hidden"
           aria-label={mobileOpen ? 'إغلاق القائمة' : 'فتح القائمة'}
         >
           {mobileOpen ? (
@@ -96,7 +95,7 @@ export default function Navbar() {
 
       {/* ── Mobile slide-down panel ── */}
       <div
-        className={`overflow-hidden bg-navy-800 transition-all duration-300 ease-out md:hidden ${
+        className={`overflow-hidden bg-navy-800 transition-all duration-300 ease-out xl:hidden ${
           mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

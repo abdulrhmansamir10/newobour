@@ -8,7 +8,7 @@ export default function AddListing() {
         <div className="mx-auto max-w-[1120px]">
           <h1 className="m-0 text-[32px] font-extrabold">أضف عرضك</h1>
           <p className="m-0 mt-2 max-w-[680px] text-base leading-relaxed text-white/75">
-            أرسل بيانات القطعة أو الوحدة، وسنراجعها قبل ظهورها في الماركت بليس.
+            أرسل بيانات القطعة أو الوحدة، وسنراجعها قبل ظهورها ضمن عروض الأراضي والعقارات.
           </p>
         </div>
       </header>
@@ -98,7 +98,7 @@ export default function AddListing() {
             </p>
             <Link
               to="/broker/register"
-              className="mt-4 inline-flex h-10 items-center justify-center rounded-xl bg-navy-800 px-4 text-sm font-bold text-white transition hover:bg-navy-700"
+              className="mt-4 inline-flex h-11 w-full items-center justify-center rounded-xl bg-navy-900 px-4 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(7,17,32,0.22)] ring-1 ring-navy-900/10 transition hover:bg-navy-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-800"
             >
               تسجيل وسيط معتمد
             </Link>

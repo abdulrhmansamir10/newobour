@@ -18,7 +18,7 @@ export default function AdminModeration() {
         <div className="mx-auto max-w-[1120px]">
           <h1 className="m-0 text-[32px] font-extrabold">لوحة مراجعة العروض</h1>
           <p className="m-0 mt-2 text-base text-white/75">
-            اعتماد عروض الوسطاء قبل ظهورها في الماركت بليس.
+            اعتماد عروض الوسطاء قبل ظهورها ضمن عروض الأراضي والعقارات.
           </p>
         </div>
       </header>

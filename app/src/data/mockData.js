@@ -58,7 +58,7 @@ export const news = [
 /** Quick action services */
 export const services = [
   { icon: 'FileSearch', title: 'كشوف التقنين', desc: 'ابحث باسمك أو رقمك القومي للتأكد من نزول الكشف', to: '/ledger-search' },
-  { icon: 'Building2', title: 'الماركت بليس', desc: 'تصفّح عروض الأراضي والوحدات الموثّقة', to: '/marketplace' },
+  { icon: 'Building2', title: 'عروض الأراضي والعقارات', desc: 'تصفّح عروض الأراضي والوحدات الموثّقة', to: '/marketplace' },
   { icon: 'Newspaper', title: 'الأخبار والمرافق', desc: 'تحديثات رسمية عن المرافق والطرق والتسليمات', to: '/news' },
   { icon: 'ScrollText', title: 'دليل الترخيص', desc: 'خطوات الترخيص والبناء والاستلام والتكاليف', to: '/guide' },
 ];

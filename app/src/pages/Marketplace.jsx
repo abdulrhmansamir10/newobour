@@ -47,7 +47,7 @@ export default function Marketplace() {
     <div className="min-h-[70vh] bg-paper">
       <header className="bg-navy-800 px-6 py-10 text-white md:px-9">
         <div className="mx-auto max-w-[1320px]">
-          <h1 className="m-0 text-[32px] font-extrabold">الماركت بليس</h1>
+          <h1 className="m-0 text-[32px] font-extrabold">عروض الأراضي والعقارات</h1>
           <p className="m-0 mt-2 text-base text-white/75">
             تصفّح عروض الأراضي والوحدات حسب الحالة القانونية والموقع
           </p>
